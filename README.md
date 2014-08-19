@@ -5,6 +5,10 @@ A category on NSURLConnection that allows making an async request that accepts a
 
 Sample usage:
 
-  [NSURLConnection sendAsynchronousRequestAcceptingAllCerts:[NSURLRequest requestWithURL:url] queue:[NSOperationQueue     mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+```
+[NSURLConnection  sendAsynchronousRequestAcceptingAllCerts:request 
+                  queue:queue 
+                  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
     //process results
-  }];
+}];
+```
