@@ -1,7 +1,7 @@
 NSURLConnection-SelfSigned
 ==========================
 
-A category on NSURLConnection that allows making an async request that accepts all https certificates.
+A category on NSURLConnection that allows making async requests that accept all https certificates.
 
 Sample usage:
 
