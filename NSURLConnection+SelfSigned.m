@@ -90,6 +90,9 @@
     // The request has failed for some reason!
     _error = error;
     _handler(_urlResponse,_responseData, _error);
+    @synchronized([NSURLConnectionDelegateWrapper wrappers]){
+        [[NSURLConnectionDelegateWrapper wrappers] removeObject:self];
+    }
 }
 
 @end
